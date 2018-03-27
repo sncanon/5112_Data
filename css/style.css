@@ -16,8 +16,17 @@ color: black;
 font-family: "Helvetica Neue Bold","Helvetica-Light",  sans-serif;
 font-size: 30px;
 font-weight: bolder;
-padding: 20px;
+padding: none;
 letter-spacing: 1px;
+}
+h2 {
+	text-align: center;
+color: black;
+font-family: "Helvetica Neue Bold","Helvetica-Light",  sans-serif;
+font-size: 23px;
+font-weight: bolder;
+padding: none;
+letter-spacing: .5px;
 }
 
 p {

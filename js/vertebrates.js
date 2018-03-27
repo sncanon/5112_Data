@@ -2,7 +2,7 @@ var myConfig = {
  	type: 'line',
  	backgroundColor:'#EAEAEA',
  	title:{
- 	  text:'NUMBERS OF THREATENED SPECIES: SUMMARY',
+ 	  text:'NUMBERS OF THREATENED VERTEBRATES',
  	  adjustLayout: true,
  	  fontColor:"black",
  	  marginTop: 5,
@@ -108,115 +108,46 @@ var myConfig = {
 
 	series: [
 		{
-			values:[3314, null, 3507, null, 3521, 3524, 5188, null, 5622, 5742, 5966, 6143, 6714, 7108, 7250, 7390, 7678, 7781, 8160, 8374],
-      text: 'Vertebrates',
-			lineColor:'#c16e68',
+			values: [1096, null, 1130, null, 1137, 1130, 1101, null, 1093, 1094, 1141, 1142, 1131, 1138, 1139, 1143, 1199, 1197, 1194, 1204],
+      text: 'Mammals',
+			lineColor:'#D24136',
 			marker:{
-			  backgroundColor:'#c16e68'
+			  backgroundColor:'#D24136'
 			}
 		},
 		{
-		  values:[1891, null,
-1928,
-null,
-1932,
-1959,
-1992,
-null,
-2102,
-2109,
-2496,
-2639,
-2904,
-3297,
-3570,
-3822,
-4140,
-4201,
-4470,
-4893],
-      text: 'Invertebrates',
+		  values:[1107, null, 1183, null, 1192, 1194, 1213, null, 1206, 1217, 1222, 1223, 1240, 1253, 1313, 1308, 1373, 1375, 1460, 1469],
+      text: 'Birds',
 		  lineColor: '#75B1A9',
 		  marker:{
 		    backgroundColor:'#75B1A9'
 		  }
 		},
-
     {
-		  values:[5328,null,
-5611,
-null,
-5714,
-6774,
-8321,
-null,
-8390,
-8448,
-8457,
-8500,
-8724,
-9156,
-9390,
-10065,
-10584,
-11233,
-11643,
-12505],
-      text: 'Plants',
+      values: [253, null, 296, null, 293, 293, 304, null, 341, 422, 423, 469, 594, 772, 807, 879, 927, 944, 1079, 1215],
+      text: 'Reptiles',
+		  lineColor:'#EB8A3E',
+		  marker:{
+		    backgroundColor:'#EB8A3E'
+		  }
+		},
+    {
+		  values:[124, null, 146, null, 157, 157, 1770, null, 1811, 1808, 1905, 1895, 1898, 1917, 1933, 1950, 1957, 1994, 2068, 2100],
+      text: 'Amphibians',
 		  lineColor: '#3F681C',
 		  marker:{
 		    backgroundColor:'#3F681C'
 		  }
 		},
 		{
-		  values: [null,null,null,null, null,
-2,
-2,
-null,
-3,
-9,
-9,
-9,
-9,
-9,
-9,
-49,
-11,
-35,
-34,
-49],
-      text: 'Fungi and Protists',
+		  values: [734, null, 752, null, 742, 750, 800, null, 1171, 1201, 1275, 1414, 1851, 2028, 2058, 2110, 2222, 2271, 2359, 2386],
+      text: 'Fishes',
 		  lineColor:'#257985',
 		  marker:{
 		    backgroundColor:'#257985'
 		  }
 		},
-    {
-		  values:[10533,null,
-11046,
-null,
-11167,
-12259,
-15503,
-null,
-16117,
-16308,
-16928,
-17291,
-18351,
-19570,
-20219,
-21326,
-22413,
-23250,
-24307,
-25821],
-      text: 'Total Species Threatened',
-		  lineColor: 'red',
-		  marker:{
-		    backgroundColor:'red'
-		  }
-		}
+
 	]
 
 };
