@@ -1,10 +1,10 @@
 var myConfig = {
  	type: 'line',
- 	backgroundColor:'#2C2C39',
+ 	backgroundColor:'#EAEAEA',
  	title:{
- 	  text:'VERTEBRATES',
+ 	  text:'NUMBERS OF THREATENED SPECIES: SUMMARY',
  	  adjustLayout: true,
- 	  fontColor:"#E3E3E5",
+ 	  fontColor:"black",
  	  marginTop: 5,
  	},
  	legend:{
@@ -14,7 +14,7 @@ var myConfig = {
  	  backgroundColor:'none',
  	  borderWidth: 0,
  	  item:{
- 	    fontColor:'#E3E3E5',
+ 	    fontColor:'black',
  	    cursor: 'hand'
  	  },
  	  marker:{
@@ -36,36 +36,36 @@ var myConfig = {
  	},
  	scaleX:{
    labels: ["1996/98","1999","2000","2001","2002","2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013","2014","2015","2016","2017"],
- 	  lineColor: '#E3E3E5',
+ 	  lineColor: 'black',
  	  zooming: true,
  	  zoomTo:[0,19],
  	  item:{
- 	    fontColor:'#E3E3E5',
+ 	    fontColor:'black',
  	  },
 
  	},
  	scaleY:{
  	  minorTicks: 1,
- 	  lineColor: '#E3E3E5',
+ 	  lineColor: 'black',
  	  tick:{
- 	    lineColor: '#E3E3E5'
+ 	    lineColor: 'black'
  	  },
  	  minorTick:{
- 	    lineColor: '#494960'
+ 	    lineColor: 'gray'
  	  },
  	  minorGuide:{
  	    visible: true,
  	    lineWidth: 1,
- 	    lineColor: '#494960',
+ 	    lineColor: 'none',
  	    alpha: 0.7,
  	    lineStyle: 'dashed'
  	  },
  	  guide:{
  	    lineStyle: 'dashed',
-      lineColor: '#494960'
+      lineColor: 'gray'
  	  },
  	  item:{
- 	    fontColor:'#E3E3E5'
+ 	    fontColor:'black'
  	  }
  	},
  	tooltip:{
@@ -74,7 +74,7 @@ var myConfig = {
  	},
  	preview:{
  	  adjustLayout: true,
- 	  borderColor:'#E3E3E5',
+ 	  borderColor:'gray',
  	  mask:{
  	    backgroundColor:'#E3E3E5'
  	  }
@@ -94,82 +94,124 @@ var myConfig = {
  	  }
  	},
  	crosshairY:{
- 	  lineColor:'#E3E3E5',
+ 	  lineColor:'darkgray',
  	  type:'multiple',
  	  scaleLabel:{
  	    decimals: 2,
  	    borderRadius: 3,
  	    offsetX: -5,
- 	    fontColor:"#2C2C39",
+ 	    fontColor:"#black",
  	    bold: true
  	  }
  	},
- 	shapes:[
-              {
-                type:'rectangle',
-                id:'view_all',
-                height:'20px',
-                width:'75px',
-                borderColor:'#E3E3E5',
-                borderWidth:1,
-                borderRadius: 3,
-                x:'68%',
-                y:'5.5%',
-                backgroundColor:'#53535e',
-                cursor:'hand',
-                label:{
-                  text:'View All',
-                  fontColor:'#E3E3E5',
-                  fontSize:12,
-                  bold:true
-                }
-              }
-            ],
+
 
 	series: [
 		{
-			values: [1096, null, 1130, null, 1137, 1130, 1101, null, 1093, 1094, 1141, 1142, 1131, 1138, 1139, 1143, 1199, 1197, 1194, 1204],
-      text: 'Mammals',
-			lineColor:'#D24136',
+			values:[3314, null, 3507, null, 3521, 3524, 5188, null, 5622, 5742, 5966, 6143, 6714, 7108, 7250, 7390, 7678, 7781, 8160, 8374],
+      text: 'Vertebrates',
+			lineColor:'#c16e68',
 			marker:{
-			  backgroundColor:'#D24136'
+			  backgroundColor:'#c16e68'
 			}
 		},
 		{
-		  values:[1107, null, 1183, null, 1192, 1194, 1213, null, 1206, 1217, 1222, 1223, 1240, 1253, 1313, 1308, 1373, 1375, 1460, 1469],
-      text: 'Birds',
+		  values:[1891, null,
+1928,
+null,
+1932,
+1959,
+1992,
+null,
+2102,
+2109,
+2496,
+2639,
+2904,
+3297,
+3570,
+3822,
+4140,
+4201,
+4470,
+4893],
+      text: 'Invertebrates',
 		  lineColor: '#75B1A9',
 		  marker:{
 		    backgroundColor:'#75B1A9'
 		  }
 		},
+
     {
-      values: [253, null, 296, null, 293, 293, 304, null, 341, 422, 423, 469, 594, 772, 807, 879, 927, 944, 1079, 1215],
-      text: 'Reptiles',
-		  lineColor:'#EB8A3E',
-		  marker:{
-		    backgroundColor:'#EB8A3E'
-		  }
-		},
-    {
-		  values:[124, null, 146, null, 157, 157, 1770, null, 1811, 1808, 1905, 1895, 1898, 1917, 1933, 1950, 1957, 1994, 2068, 2100],
-      text: 'Amphibians',
+		  values:[5328,null,
+5611,
+null,
+5714,
+6774,
+8321,
+null,
+8390,
+8448,
+8457,
+8500,
+8724,
+9156,
+9390,
+10065,
+10584,
+11233,
+11643,
+12505],
+      text: 'Plants',
 		  lineColor: '#3F681C',
 		  marker:{
 		    backgroundColor:'#3F681C'
 		  }
 		},
 		{
-		  values: [734, null, 752, null, 742, 750, 800, null, 1171, 1201, 1275, 1414, 1851, 2028, 2058, 2110, 2222, 2271, 2359, 2386],
-      text: 'Fishes',
+		  values: [null,null,null,null, null,
+2,
+2,
+null,
+3,
+9,
+9,
+9,
+9,
+9,
+9,
+49,
+11,
+35,
+34,
+49],
+      text: 'Fungi and Protists',
 		  lineColor:'#257985',
 		  marker:{
 		    backgroundColor:'#257985'
 		  }
 		},
     {
-		  values:[3314, null, 3507, null, 3521, 3524, 5188, null, 5622, 5742, 5966, 6143, 6714, 7108, 7250, 7390, 7678, 7781, 8160, 8374],
-      text: 'Total Vertebrates Threatened',
+		  values:[10533,null,
+11046,
+null,
+11167,
+12259,
+15503,
+null,
+16117,
+16308,
+16928,
+17291,
+18351,
+19570,
+20219,
+21326,
+22413,
+23250,
+24307,
+25821],
+      text: 'Total Species Threatened',
 		  lineColor: 'red',
 		  marker:{
 		    backgroundColor:'red'
@@ -183,7 +225,7 @@ zingchart.render({
 	id: 'myChart',
 	data: myConfig,
 	height: '500',
-	width: '90%'
+	width: '95%',
 });
 
 zingchart.shape_click = function(p){
