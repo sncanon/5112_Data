@@ -1,10 +1,10 @@
 var myConfig = {
  	type: 'line',
- 	backgroundColor:'#2C2C39',
+ 	backgroundColor:'#EAEAEA',
  	title:{
  	  text:'VERTEBRATES',
  	  adjustLayout: true,
- 	  fontColor:"#E3E3E5",
+ 	  fontColor:"black",
  	  marginTop: 5,
  	},
  	legend:{
@@ -14,7 +14,7 @@ var myConfig = {
  	  backgroundColor:'none',
  	  borderWidth: 0,
  	  item:{
- 	    fontColor:'#E3E3E5',
+ 	    fontColor:'black',
  	    cursor: 'hand'
  	  },
  	  marker:{
@@ -36,36 +36,36 @@ var myConfig = {
  	},
  	scaleX:{
    labels: ["1996/98","1999","2000","2001","2002","2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013","2014","2015","2016","2017"],
- 	  lineColor: '#E3E3E5',
+ 	  lineColor: 'black',
  	  zooming: true,
  	  zoomTo:[0,19],
  	  item:{
- 	    fontColor:'#E3E3E5',
+ 	    fontColor:'black',
  	  },
 
  	},
  	scaleY:{
  	  minorTicks: 1,
- 	  lineColor: '#E3E3E5',
+ 	  lineColor: 'black',
  	  tick:{
- 	    lineColor: '#E3E3E5'
+ 	    lineColor: 'black'
  	  },
  	  minorTick:{
- 	    lineColor: '#494960'
+ 	    lineColor: 'gray'
  	  },
  	  minorGuide:{
  	    visible: true,
  	    lineWidth: 1,
- 	    lineColor: '#494960',
+ 	    lineColor: 'none',
  	    alpha: 0.7,
  	    lineStyle: 'dashed'
  	  },
  	  guide:{
  	    lineStyle: 'dashed',
-      lineColor: '#494960'
+      lineColor: 'gray'
  	  },
  	  item:{
- 	    fontColor:'#E3E3E5'
+ 	    fontColor:'black'
  	  }
  	},
  	tooltip:{
@@ -74,7 +74,7 @@ var myConfig = {
  	},
  	preview:{
  	  adjustLayout: true,
- 	  borderColor:'#E3E3E5',
+ 	  borderColor:'gray',
  	  mask:{
  	    backgroundColor:'#E3E3E5'
  	  }
@@ -94,37 +94,17 @@ var myConfig = {
  	  }
  	},
  	crosshairY:{
- 	  lineColor:'#E3E3E5',
+ 	  lineColor:'darkgray',
  	  type:'multiple',
  	  scaleLabel:{
  	    decimals: 2,
  	    borderRadius: 3,
  	    offsetX: -5,
- 	    fontColor:"#2C2C39",
+ 	    fontColor:"#black",
  	    bold: true
  	  }
  	},
- 	shapes:[
-              {
-                type:'rectangle',
-                id:'view_all',
-                height:'20px',
-                width:'75px',
-                borderColor:'#E3E3E5',
-                borderWidth:1,
-                borderRadius: 3,
-                x:'68%',
-                y:'5.5%',
-                backgroundColor:'#53535e',
-                cursor:'hand',
-                label:{
-                  text:'View All',
-                  fontColor:'#E3E3E5',
-                  fontSize:12,
-                  bold:true
-                }
-              }
-            ],
+ 	
 
 	series: [
 		{
@@ -183,7 +163,7 @@ zingchart.render({
 	id: 'myChart',
 	data: myConfig,
 	height: '500',
-	width: '90%'
+	width: '95%',
 });
 
 zingchart.shape_click = function(p){
